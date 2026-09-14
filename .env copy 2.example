@@ -1,11 +1,22 @@
-GITHUB_OWNER=TON_COMPTE_GITHUB
-GITHUB_REPO=TON_REPOSITORY
+# GitHub repository used as the persistent Excel/document store.
+GITHUB_OWNER=YOUR_GITHUB_ORG_OR_USER
+GITHUB_REPO=YOUR_PRIVATE_REPO
 GITHUB_BRANCH=main
-GITHUB_TOKEN=TON_TOKEN_GITHUB
+GITHUB_TOKEN=github_pat_xxxxxxxxxxxxxxxxxxxx
 
-ADMIN_PASSWORD=MonMotDePasseAdmin123!
+# Password used only by the server for the admin area.
+ADMIN_PASSWORD=CHANGE_ME_TO_A_LONG_RANDOM_PASSWORD
 
-CONTACT_EMAIL=gala@mirs.qc.ca
-
-PORT=3001
+# Optional: set if the frontend is served from another origin.
 CORS_ORIGIN=http://localhost:5173
+PORT=3001
+
+
+# Email notifications (optional but recommended)
+CONTACT_EMAIL=gala@mirs.qc.ca
+SMTP_HOST=smtp.office365.com
+SMTP_PORT=587
+SMTP_SECURE=false
+SMTP_USER=your-mailbox@mirs.qc.ca
+SMTP_PASS=your-password-or-app-password
+SMTP_FROM=Gala Black Excellence <your-mailbox@mirs.qc.ca>
